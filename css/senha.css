@@ -17,6 +17,32 @@ body{
     height: 100vh;
 }
 
+.recuperar-senha {
+    height: 50vh;
+    width: 80%;
+    border-radius: 15px;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-direction: column;
+    background-color: purple;
+}
+
+.infoForm {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+    color: #fff;
+    margin: 10px;
+}
+
 .nova-senha {
-    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ccc;
+    row-gap: 25px;
+    border: 15px;
 }
