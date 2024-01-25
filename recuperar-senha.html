@@ -24,18 +24,22 @@
             </div>
 
             <div>
-                <input type="password" class="newPassword" placeholder="Digite sua nova senha">
+                <input type="password" class="newPassword" placeholder="Digite sua nova senha" id="novaSenha1">
+                <input type="checkbox" id="checkbox1">
             </div>
 
             <div>
-                <input type="password" class="newPassword" placeholder="Digite sua senha novamente">
+                <input type="password" class="newPassword" placeholder="Digite sua senha novamente" id="novaSenha2">
+                <input type="checkbox" id="checkbox2">
             </div>
-
+            <div class="bntForm">
+                <button type="submit" class="concSenha" onclick="trocaSenha()" id="bntSenha">Trocar senha</button>
+            </div>
         </form>
     </div>
 
     <a href="./index.html">Home</a>
-
+    <script src="./js/senha.js"></script>
 </body>
 
 </html>

@@ -42,7 +42,25 @@ body{
 .nova-senha {
     display: flex;
     flex-wrap: wrap;
-    background-color: #ccc;
     row-gap: 25px;
     border: 15px;
+}
+
+.nova-senha input {
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.bntForm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.concSenha {
+    color: purple;
+    margin: 15px;
+    border-radius: 5px;
+    margin-left: 15px;
+    padding: 4px;
 }
