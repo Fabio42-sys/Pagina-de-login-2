@@ -16,15 +16,17 @@ document.getElementById('formSenha').addEventListener('input', function() {
     }
 });
 
+var senha1 = document.getElementById('novaSenha1').value;
+var senha2 = document.getElementById('novaSenha2').value;
+var checkbox = document.getElementById('verificaSenha');
 
-
-    var senha1 = document.getElementById('novaSenha1').value;
-    var senha2 = document.getElementById('novaSenha2').value;
-    var checkbox = document.getElementById('verificaSenha');
-
-    // Ativa o checkbox apenas se ambas as senhas tiverem conteúdo e forem iguais
-    checkbox.disabled = !(senha1 && senha2 && senha1 === senha2);
-
+// Ativa o checkbox apenas se ambas as senhas tiverem conteúdo, forem iguais, e não forem espaços em branco
+if (senha1 == senha2) {
+    checkbox.checked;
+    window.alert('As senhas são iguais clique no botão para afetuar a troca');
+} else {
+    checkbox.disabled;
+}
 
 
 const showPass = document.getElementById('novaSenha1');
