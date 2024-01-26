@@ -1,23 +1,71 @@
-function checarSenha() {
-    let senha1 = document.getElementById('novaSenha1');
-    let senha2 = document.getElementById('novaSenha2');
-    let inputCheck1 = document.getElementById('checkbox1');
-    let inputCheck2 = document.getElementById('checkbox2');
+document.getElementById('formSenha').addEventListener('input', function() {
+    let senha1= document.getElementById('novaSenha1').value;
+    let senha2 = document.getElementById('novaSenha2').value;
+    let checkbox = document.getElementById('verificaSenha');
 
-    if(senha1 == senha2) {
-        inputCheck1.checked = !inputCheck1.checked;
-        inputCheck2.checked = !inputCheck2.checked;
+
+    if (senha1 === senha2) {
+        checkbox.disabled = false;
+        checkbox.checked = true;
+
+    } else {
+        checkbox.disabled = true;
+        checkbox.checked = false;
+
+
     }
-}
+});
 
-function trocarSenha() {
-    let novaSenha = document.getElementById('bntSenha');
-    
-    novaSenha.addEventListener('click', event => {
-        if(event.target.classList.contains('concSenha')) {
-            window.alert('Nova senha cadastrada! Faça login novamente');
-        }else {
-            window.alert('Senhas não são iguais, tente novamente');
+
+
+    var senha1 = document.getElementById('novaSenha1').value;
+    var senha2 = document.getElementById('novaSenha2').value;
+    var checkbox = document.getElementById('verificaSenha');
+
+    // Ativa o checkbox apenas se ambas as senhas tiverem conteúdo e forem iguais
+    checkbox.disabled = !(senha1 && senha2 && senha1 === senha2);
+
+
+
+const showPass = document.getElementById('novaSenha1');
+const showPass2 = document.getElementById('novaSenha2');
+const newPass = document.getElementById('newPass');
+const confirmPass = document.getElementById('confirmPass');
+
+
+newPass.addEventListener('click', event => {
+
+    if (event.target.classList.contains('cadeado')) {
+
+        let iconeAntes = "img/cadeado-fechado.svg";
+        let iconeDepois = "img/cadeado-aberto.svg";
+
+        if(event.target.src.includes(iconeAntes)) {
+            showPass.type = 'text';
+            event.target.src = iconeDepois
+        } else {
+            showPass.type = 'password';
+            event.target.src = iconeAntes
         }
-    });
-}
+    }
+});
+
+confirmPass.addEventListener('click', event => {
+
+    if(event.target.classList.contains('cadeado')) {
+
+        let iconeAntes = "img/cadeado-fechado.svg";
+        let iconeDepois = "img/cadeado-aberto.svg";
+
+        if(event.target.src.includes(iconeAntes)) {
+            showPass2.type = "text";
+            event.target.src = iconeDepois
+        } else {
+            showPass2.type = "password";
+            event.target.src = iconeAntes;
+        }
+
+
+    }
+
+})

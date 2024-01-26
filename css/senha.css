@@ -40,15 +40,22 @@ body{
 }
 
 .nova-senha {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     row-gap: 25px;
     border: 15px;
+    background-color: #fff;
 }
 
 .nova-senha input {
     border-radius: 5px;
     margin: 5px;
+}
+
+.inputInfo {
+    display: flex;
+    align-items: center;
 }
 
 .bntForm {
@@ -63,4 +70,10 @@ body{
     border-radius: 5px;
     margin-left: 15px;
     padding: 4px;
+}
+
+.cadeado {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
 }

@@ -18,20 +18,36 @@
         </div>
 
 
-        <form class="nova-senha">
+        <form class="nova-senha" id="formSenha">
             <div>
-                <input type="email" class="inputEmail"  placeholder="Digite seu email">
+                <div class="labelInfo">
+                <label>Email:</label>
+                </div>
+                <input type="email" class="inputEmail"  placeholder="info@email.com" required>
             </div>
 
             <div>
-                <input type="password" class="newPassword" placeholder="Digite sua nova senha" id="novaSenha1">
-                <input type="checkbox" id="checkbox1">
+                <div class="labelInfo">
+                <label for="novaSenha1" class="labelForm">Nova senha:</label>
+                </div>
+                <div class="inputInfo">
+                <input type="password" placeholder="******" class="newPassword" id="novaSenha1" required>
+                <img src="./img/cadeado-fechado.svg" class="cadeado" id="newPass">
+                </div>
             </div>
 
             <div>
-                <input type="password" class="newPassword" placeholder="Digite sua senha novamente" id="novaSenha2">
-                <input type="checkbox" id="checkbox2">
+                <div class="labelInfo">
+                <label for="novaSenha2">Escreva sua senha novamente:</label>
+                </div>
+                <div class="inputInfo">
+                <input type="password" placeholder="******" class="newPassword" id="novaSenha2" required>
+                <img src="./img/cadeado-fechado.svg" class="cadeado" id="confirmPass">
+                </div>
             </div>
+
+            <label for="checkbox">As senhas são iguais:</label>
+            <input type="checkbox" id="verificaSenha" disabled>
             <div class="bntForm">
                 <button type="submit" class="concSenha" onclick="trocaSenha()" id="bntSenha">Trocar senha</button>
             </div>
