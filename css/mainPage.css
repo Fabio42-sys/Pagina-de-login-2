@@ -1,0 +1,100 @@
+body {
+    background-color:darkblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    max-width: 100%;
+    min-width: 10rem;
+    height: 8vh;
+    padding: 10px;
+    background-color: darkviolet;
+}
+
+.headerContainer {
+    width: 100%;
+    min-width: 10rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoPage {
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.logoPage img {
+    width: 100%;
+}
+
+.importante {
+    width: 30%;
+    height: 30px;
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 15px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    padding: 3px;
+}
+
+.importante img {
+    width: 20px;
+    height: 20px;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    float: left;
+    position: absolute;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: darkviolet;
+}
+
+.uteis {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.main {
+    width: 65%;
+    margin-left: 30%;
+    margin-right: 5%;
+    background-color: #fff;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.info-card {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.info-card h3 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    font-size: 15px;
+    width: 90px;
+}
