@@ -230,3 +230,30 @@ body{
 .input-flex input{
     width: 250px;
 }
+
+/* Original styles */
+
+/* ... (existing code) ... */
+
+
+/* Responsive styles for mobile */
+
+@media only screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container form {
+        padding: 0 10px;
+    }
+
+    .input-flex input {
+        width: 100%;
+    }
+}
+
+                                                                    /* Add more styles or adjust as needed */
