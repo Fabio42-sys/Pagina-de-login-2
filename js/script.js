@@ -75,6 +75,3 @@ cadeado.addEventListener('click', event => {
         }
     }
 });
-
-
-
