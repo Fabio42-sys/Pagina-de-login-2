@@ -63,24 +63,16 @@ const newPass1 = document.getElementById('novaSenha1');
 const newPass2 = document.getElementById('novaSenha2');
 const confirm = document.getElementById('verificaSenha');
 
-newPass1.addEventListener('change', event => {
-    if (event.target.value != "") {
+newPass1.addEventListener('input', updateCheckbox);
+newPass2.addEventListener('input', updateCheckbox);
+
+function verificarCont() {
+    const isPlaceholder1 = newPass1.value === newPass1.placeholder;
+    const isPlaceholder2 = newPass2.value === newPass2.placeholder;
+
+    if (newPass1.value === newPass2.value && newPass1.value !== "" && newPass2.value !== "" && !isPlaceholder1 && !isPlaceholder2) {
         confirm.checked = true;
     } else {
         confirm.checked = false;
     }
-});
-
-newPass2.addEventListener('change', event => {
-    if (event.target.value != "") {
-        confirm.checked = true;
-    } else {
-        confirm.checked = false;
-    }
-});
-
-if (newPass1.value == newPass2.value) {
-    confirm.checked = true;
-} else {
-    confirm.checked = false;
 }
