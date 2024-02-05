@@ -77,3 +77,7 @@ body{
     width: 20px;
     cursor: pointer;
 }
+
+.newPassword {
+    padding: 2px;
+}

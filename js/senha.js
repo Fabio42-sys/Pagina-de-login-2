@@ -16,22 +16,6 @@ document.getElementById('formSenha').addEventListener('input', function() {
     }
 });
 
-function verificarCont() {
-
-var senha1 = document.getElementById('novaSenha1').value;
-var senha2 = document.getElementById('novaSenha2').value;
-var checkbox = document.getElementById('verificaSenha');
-
-if(senha1.value.trim() != '' && senha2.value.trim() != '') {
-    checkbox.disabled = true;
-    checkbox.checked = false;
-} else {
-    checkbox.checked = true;
-    checkbox.disabled = false;
-}
-
-}
-
 const showPass = document.getElementById('novaSenha1');
 const showPass2 = document.getElementById('novaSenha2');
 const newPass = document.getElementById('newPass');
@@ -73,4 +57,30 @@ confirmPass.addEventListener('click', event => {
 
     }
 
-})
+});
+
+const newPass1 = document.getElementById('novaSenha1');
+const newPass2 = document.getElementById('novaSenha2');
+const confirm = document.getElementById('verificaSenha');
+
+newPass1.addEventListener('change', event => {
+    if (event.target.value != "") {
+        confirm.checked = true;
+    } else {
+        confirm.checked = false;
+    }
+});
+
+newPass2.addEventListener('change', event => {
+    if (event.target.value != "") {
+        confirm.checked = true;
+    } else {
+        confirm.checked = false;
+    }
+});
+
+if (newPass1.value == newPass2.value) {
+    confirm.checked = true;
+} else {
+    confirm.checked = false;
+}
