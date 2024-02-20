@@ -18,7 +18,7 @@ body{
 }
 
 .recuperar-senha {
-    height: 50vh;
+    height: 70vh;
     width: 80%;
     border-radius: 15px;
     margin: 50px;
@@ -29,6 +29,7 @@ body{
     gap: 30px;
     flex-direction: column;
     background-color: purple;
+    padding: 20px;
 }
 
 .infoForm {
@@ -40,12 +41,15 @@ body{
 }
 
 .nova-senha {
+    height: 300px;
     width: 100%;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     row-gap: 25px;
     border: 15px;
     background-color: #fff;
+    flex-direction: column;
 }
 
 .nova-senha input {
