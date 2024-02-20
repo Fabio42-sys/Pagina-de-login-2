@@ -88,3 +88,9 @@ body{
 
 .link {
     color: #fff;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: #0000FF;
+}
