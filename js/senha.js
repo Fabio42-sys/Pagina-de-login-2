@@ -40,3 +40,9 @@ confirmPass.addEventListener('click', event => {
     }
 
 });
+
+const bnt = document.getElementById('bntSenha');
+
+bnt.addEventListener('click', () => {
+    window.alert('Senha trocada com sucesso!');
+});
