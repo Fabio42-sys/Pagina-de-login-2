@@ -69,11 +69,18 @@ body{
 }
 
 .concSenha {
-    color: purple;
+    color: #000;
+    background-color: #fff;
     margin: 15px;
     border-radius: 5px;
     margin-left: 15px;
     padding: 4px;
+    cursor: poiter;
+}
+
+.concSenha:hover {
+    background-color: #000;
+    color: #fff;
 }
 
 .cadeado {
