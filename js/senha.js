@@ -1,21 +1,3 @@
-document.getElementById('formSenha').addEventListener('input', function() {
-    let senha1= document.getElementById('novaSenha1').value;
-    let senha2 = document.getElementById('novaSenha2').value;
-    let checkbox = document.getElementById('verificaSenha');
-
-
-    if (senha1 === senha2) {
-        checkbox.disabled = false;
-        checkbox.checked = true;
-
-    } else {
-        checkbox.disabled = true;
-        checkbox.checked = false;
-
-
-    }
-});
-
 const showPass = document.getElementById('novaSenha1');
 const showPass2 = document.getElementById('novaSenha2');
 const newPass = document.getElementById('newPass');
@@ -58,21 +40,3 @@ confirmPass.addEventListener('click', event => {
     }
 
 });
-
-const newPass1 = document.getElementById('novaSenha1');
-const newPass2 = document.getElementById('novaSenha2');
-const confirm = document.getElementById('verificaSenha');
-
-newPass1.addEventListener('input', updateCheckbox);
-newPass2.addEventListener('input', updateCheckbox);
-
-function verificarCont() {
-    const isPlaceholder1 = newPass1.value === newPass1.placeholder;
-    const isPlaceholder2 = newPass2.value === newPass2.placeholder;
-
-    if (newPass1.value === newPass2.value && newPass1.value !== "" && newPass2.value !== "" && !isPlaceholder1 && !isPlaceholder2) {
-        confirm.checked = true;
-    } else {
-        confirm.checked = false;
-    }
-}
